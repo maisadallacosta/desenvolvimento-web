@@ -1,0 +1,109 @@
+body {
+    background-color:#efdecd ;
+    text-align: center;
+    margin: 0;
+    width: 90%;
+}
+
+p, li, a {
+    font-family: 'EB Garamond', serif;
+    font-size: 19px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #43270f;
+}
+
+h1 {
+    padding-left: 18px;
+}
+
+h1, h2 {
+    font-family: 'Instrument Serif', serif;
+}
+
+a{
+    font-size: 18px;
+    color: palevioletred;
+    margin-left: 11px;
+}
+
+a:hover {
+    color: #43270f;
+}
+
+/* aqui tive ajuda da internet em questao de conseguir ajustar o tamanho do icon para as listas */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 89%;
+
+    border: 2px dashed #43270f;
+
+    padding: 3px;
+    margin: 50px auto;
+}
+
+#lado-esq,
+#lado-dir {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container ul {
+    padding: 0;
+    margin:0;
+    width: fit-content;
+}
+
+.container li {
+    list-style: none; /* para tirar o simbolo que vem com li e substituir pelo escolhido*/
+    text-align: left;
+    background-image: url("images/list-icon.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: left center;
+    padding-left: 28px;
+    margin: 5px;
+}
+
+h2 {
+    font-size: 27px;
+}
+
+.principal {
+    width: 90%;
+}
+
+.tela-lateral {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    line-height: 28px;
+    background-color: inherit;
+    /* centraliza o aside dentro do espaco dele */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    margin: 3%;
+}
+
+main + article {
+    color: rgb(150, 72, 98)
+}
+
+/* ajusta o p que sofre mudança com setor combinador de irmao anterior */
+p {
+    color: black;
+}
