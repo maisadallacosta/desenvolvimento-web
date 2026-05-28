@@ -76,6 +76,30 @@ h1, nav {
     text-align: center;
 }
 
+@keyframes myAnimation {
+    0% {left:0vw; top:0px;}
+    10% {left:10vw; top:0px;}
+    20% {left:20vw; top:0px;}
+    30% {left:30vw; top:0px;}
+    40% {left:40vw; top:0px;}
+    50% {left:50vw; top:0px;}
+    60% {left:60vw; top:0px;}
+    70% {left:70vw; top:0px;}
+    80% {left:80vw; top:0px;}
+    90% {left:90vw; top:0px;}
+    100% {left:94vw; top:0px;}
+}
+
+.img-animada {
+    width: 80px;
+    height: 100px;
+    position: relative;
+
+    animation-name: myAnimation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite; /* para ficar em loop */
+}
+
 /* reformulando config para responsividade simples (em celular) */
 
 @media (max-width: 768px) {
