@@ -6,48 +6,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="images/favicon-estrela.png">
     <link rel="stylesheet" href="style.css">
+    
     <title>Biblioteca</title>
 </head>
 <body>
     <main>
+
         <div class="cabecalho">
-                <h1>Biblioteca</h1>
-
-                <!-- nav apenas para demonstracao -->
-                <nav>
-                    <p>Inicio</p>
-                    <p>Conta</p>
-                    <p>Carrinho</p>
-                </nav>
-
+            <h1>Biblioteca Estrela</h1>
         </div>
+
+        <!-- nav apenas para demonstracao + foi separado do cabecalho para conseguir atribuir position: sticky apenas para ele sem afetar h1. mesmo que mudasse a ordem no css, nav fica como filho da div e herda suas configuracoeds -->
+        <nav>
+            <p><u>Inicio</u></p>
+            <p><u>Conta</u></p>
+            <p><u>Carrinho</u></p>
+        </nav>
 
         <div class="container">
-            <div id="item-1">
-                <h2>Livro Azul</h2>
-                <img src="images/livro-01.jpeg" alt="Livro Azul">
-                <div class="botao">
-                    <p>Comprar agora!</p>
+            <div class="itens">
+                <!-- aqui os generos dos livros, assim como a decisao deles, foram distruibuidos aleatoriamente e talvez nao seja uma informacao correta com a realidade - meramente ilustrativo-->
+
+                <div id="item-1">
+                    <h2>Romance</h2>
+                    <img src="images/livro-1.jpeg" alt="Livro I Made You Up Inside My Head">
+                    <p>Livro <i>"I Made You Up Inside My Head"</i> de Marta Pérez-Carbonel.</p>
+
+                    <div class="botao">
+                        <p>Comprar agora!</p>
+                    </div>
+                </div>
+
+                <div id="item-2">
+                    <h2>Literatura</h2>
+                    <img src="images/livro-2.jpeg" alt="Livro Eventide">
+                    <p>Livro <i>"Eventide"</i> de Therese Bohman.</p>
+
+                    <div class="botao">
+                        <p>Comprar agora!</p>
+                    </div>
+                </div>
+
+                <div id="item-3">
+                    <h2>Historia</h2>
+                    <img src="images/livro-3.jpeg" alt="Livro Saint Sebastian's Abyss">
+                    <p>Livro <i>"Saint Sebastian's Abyss"</i> de Mark Haber.</p>
+
+                    <div class="botao">
+                        <p>Comprar agora!</p>
+                    </div>
                 </div>
             </div>
 
-            <div id="item-2">
-                <h2>Livro Preto</h2>
-                <img src="images/livro-02.jpeg" alt="Livro Preto">
-                <div class="botao">
-                    <p>Comprar agora!</p>
-                </div>
-            </div>
+            <div class="grid">
+                <div id="item-4">
+                    <h2>Filosofia</h2>
+                    <img src="images/livro-4.jpeg" alt="Livro The Transcriptionist">
+                    <p>Livro <i>"The TYranscriptionist"</i> de Amy Rowland.</p>
 
-            <div id="item-3">
-                <h2>Livro Roxo</h2>
-                <img src="images/livro-03.jpeg" alt="Livro Roxo">
-                <div class="botao">
-                    <p>Comprar agora!</p>
+                    <div class="botao">
+                        <p>Comprar agora!</p>
+                    </div>
+                </div>
+
+                <div id="item-5">
+                    <h2>Psicologia</h2>
+                    <img src="images/livro-5.jpeg" alt="Livro All Men Are Liars">
+                    <p>Livro <i>"All Men Are Liars"</i> de Alberto Manguel.</p>
+
+                    <div class="botao">
+                        <p>Comprar agora!</p>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- seria um shortcut para abrir o carrinho de compras -->
+            <img class="icon-carrinho" src="images/icon-sacola-livros.png" alt="Sacola de Livros">
     </main>
 
     

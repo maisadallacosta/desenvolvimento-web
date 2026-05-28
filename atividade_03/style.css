@@ -2,31 +2,118 @@ img {
     width: 230px;
 }
 
+/* adicionado posteriormente para ajeitar espaco de margem antes da class cabecalho */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+.itens {
+    display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     text-align: center;
     margin: 50px;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 250px;
+    justify-content: center;
+    text-align: center;
+}
+
 .botao {
     border: 2px solid black;
     border-radius: 32px;
-
+    width: 178px;
     padding: 3px;
     margin: 50px auto;
-}
-
-nav {
-    display: flex;
-    justify-content: flex-start;
-    margin: 10px;
-    position: sticky;
+    background-color: #643d1b87;
 }
 
 nav p {
     padding: 10px;
 }
 
+.cabecalho {
+    background-color: #714d2e;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    background-color: #714d2e;
+}
+
+h1 {
+    margin: 0px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+h1, nav {
+    color: white;
+}
+
+.icon-carrinho {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    width: 120px;
+}
+
+.itens > p {
+    text-align: center;
+}
+
+/* reformulando config para responsividade simples (em celular) */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav p {
+        margin: 5px;
+    }
+
+    .itens {
+        margin: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid {
+        grid-template-columns: auto;
+        gap: 40px;
+    }
+
+    img {
+        width: 100px;
+    }
+
+    .botao {
+        width: 100px;
+        margin:auto;
+    }
+
+    .icon-carrinho {
+        width: 60px;
+    }
+}
